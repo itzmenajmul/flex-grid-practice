@@ -1,0 +1,34 @@
+/* RE-SET BY DEFAULT BEHAVIOUR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* common shared classes */
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  gap: 2px;
+  width: 800px;
+  height: 200px;
+  margin: 0px auto 2px;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.hr-double-img img {
+  height: calc((100% - 5px) / 2);
+}
+
+.img-square {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
