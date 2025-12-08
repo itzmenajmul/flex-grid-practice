@@ -5,7 +5,13 @@
   box-sizing: border-box;
 }
 
+/* GRID FIRST LAYOUT */
 /* common shared classes */
+h1 {
+  text-align: center;
+  color: rgb(120, 227, 191);
+  font-weight: bold;
+}
 img {
   width: 100%;
   height: 100%;
@@ -33,8 +39,41 @@ img {
   gap: 2px;
 }
 
+/* GRID SECOND LAYOUT */
+.container {
+  max-width: 800px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px) 50px 50px;
+  gap: 10px;
+}
+
+.box {
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#box-1 {
+  grid-row: span 5;
+}
+
+#box-11,
+#box-12 {
+  grid-column: span 3;
+}
+
+.box-bg-color {
+  background-color: #ef585b;
+}
+
 /* STYLES FOR RESPONSIVENESS */
+
 /* FOR SMALL DEVICES */
+
+/* FIRST LAYOUT */
 @media screen and (max-width: 576px) {
   .row {
     flex-direction: column;
@@ -48,6 +87,8 @@ img {
 }
 
 /* FOR MEDIUM DEVICES */
+
+/* FIRST LAYOUT */
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .row {
     flex-direction: column;
